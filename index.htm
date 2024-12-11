@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="allsec">
+
+            <button id="create">Add To Employee</button>
+            <table class="table">
+            <thead>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Date Of Joining</th>
+                <th>JobRole</th>
+                <th>Gender</th>
+                <th >Options</th>
+            </thead>
+            <tbody id="RECORD"></tbody>   
+            </table>
+
+    <div class="hide-model model"> 
+        <div class="modelsection">
+                <div id="icon-conatiner">
+                    <div class="close-icon">
+                     <img class="cls-icon" src="close-icon.png">
+                    </div>
+                </div>
+            <h2>Enter EmployeeDetails</h2>
+            <form id="addSec" class="addContainer"> 
+                    <input type="text" id="fullName" name="name" placeholder="fullName.." required>
+                    <input type="email" id="email" name="email" placeholder="emailId.." required>
+                    <input type="date" id="doj" name="doj" placeholder="DateOfJoining..." required>
+                    
+                    <select name="jobrole">
+                        <option value="FrontEnd"></option>
+                        <option value="FrontEnd">FrontEnd</option>
+                        <option value="Backend">Backend</option>
+                        <option value="FullStackDeveloper">FullStackDeveloper</option>
+                    </select>
+                    
+                    <div>
+                        <input type="radio" value="Male" name="gender" class="gender">
+                        <label>Male</label>
+                    </div>
+
+                    <div>                 
+                        <input type="radio" value="Female" name="gender" class="gender">
+                        <label>Female</label>
+                    </div>
+
+                    <div>
+                        <input type="radio" value="Others" name="gender" class="gender">
+                        <label>Others</label>
+                    </div>
+                    
+                    <button id="addEmployee">Add Employee</button>
+                
+            </form>
+        </div>
+    </div>
+
+   
+    
+<div class="model hide-model" id="Updatemodel">
+    <div class="modelsection">
+        <div id="icon-conatiner">
+                    <div class="close-icon">
+                     <img class="upcls-icon cls-icon" src="close-icon.png">
+                    </div>
+                </div>
+        <form  id="updateForm"> 
+            <input type="text" id="fullName" name="name" placeholder="fullName.." required>
+            <input type="email" id="email" name="email" placeholder="emailId.." required>
+            <input type="date" id="doj" name="doj" placeholder="DateOfJoining..." required>
+            
+            <select name="jobrole">
+                <option value=""></option>
+                <option value="FrontEnd">FrontEnd</option>
+                <option value="Backend">Backend</option>
+                <option value="FullStackDeveloper">FullStackDeveloper</option>
+            </select>
+            
+            <div>
+                <input type="radio" value="Male" name="gender" class="gender">
+                <label>Male</label>
+            </div>
+
+            <div>                 
+                <input type="radio" value="Female" name="gender" class="gender">
+                <label>Female</label>
+            </div>
+
+            <div>
+                <input type="radio" value="Others" name="gender" class="gender">
+                <label>Others</label>
+            </div>
+            
+            <button id="updateForm">Update details</button>
+        
+        </form>
+    </div>
+</div> 
+</div>
+    <script src="employee.js"></script>
+</body>
+</html>
